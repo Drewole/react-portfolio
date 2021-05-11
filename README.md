@@ -28,14 +28,14 @@
   <p align="center">
     Simple React employee directory that allows searching or clicking to search by table header
     <br />
-    <a href="https://github.com/drewole/employee-directory-react"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/drewole/react-portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/drewole/employee-directory-react">View Demo</a>
+    <a href="https://github.com/drewole/react-portfolio">View Demo</a>
     ·
-    <a href="https://github.com/drewole/employee-directory-react/issues">Report Bug</a>
+    <a href="https://github.com/drewole/react-portfolio/issues">Report Bug</a>
     ·
-    <a href="https://github.com/drewole/employee-directory-react/issues">Request Feature</a>
+    <a href="https://github.com/drewole/react-portfolio/issues">Request Feature</a>
   </p>
 </p>
 
@@ -112,7 +112,7 @@ This is an example of how to list things you need to use the software and how to
  <!--Get a free API Key at [https://example.com](https://example.com) -->
 1. Clone the repo
    ```sh
-   git clone https://github.com/drewole/employee-directory-react.git
+   git clone https://github.com/drewole/react-portfolio.git
    ```
 2. Install NPM packages
    ```sh
@@ -155,7 +155,7 @@ This is an example of how to list things you need to use the software and how to
 
 Visit the site, sign up and make some music. If you would like to contribute please contact us. -->
 
-<!-- _For more examples, please refer to the [Documentation](https://github.com/drewole/employee-directory-react)_ -->
+<!-- _For more examples, please refer to the [Documentation](https://github.com/drewole/react-portfolio)_ -->
 
 
 
@@ -172,7 +172,7 @@ Planned Features:
 * Ability to download their own songs as a file to the machine for publish wherever 
 * Song categorization and tags for enhanced search -->
 
-<!-- See the [open issues](https://github.com/drewole/employee-directory-react/issues) for a list of proposed features (and known issues). -->
+<!-- See the [open issues](https://github.com/drewole/react-portfolio/issues) for a list of proposed features (and known issues). -->
 
 
 
@@ -202,7 +202,7 @@ No License
 Drew Olsen - [@drewole](https://github.com/drewole)
 
 
-Project Link: [https://github.com/drewole/employee-directory-react](https://github.com/drewole/employee-directory-react)
+Project Link: [https://github.com/drewole/react-portfolio](https://github.com/drewole/react-portfolio)
 
 
 
@@ -218,18 +218,18 @@ Project Link: [https://github.com/drewole/employee-directory-react](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/drewole/employee-directory-react.svg?style=for-the-badge
-[contributors-url]: https://github.com/drewole/employee-directory-react/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/drewole/employee-directory-react.svg?style=for-the-badge
-[forks-url]: https://github.com/drewole/employee-directory-react/network/members
-[stars-shield]: https://img.shields.io/github/stars/drewole/employee-directory-react.svg?style=for-the-badge
-[stars-url]: https://github.com/drewole/employee-directory-react/stargazers
-[issues-shield]: https://img.shields.io/github/issues/drewole/employee-directory-react.svg?style=for-the-badge
-[issues-url]: https://github.com/drewole/employee-directory-react/issues
-[license-shield]: https://img.shields.io/github/license/drewole/employee-directory-react.svg?style=for-the-badge
-[license-url]: https://github.com/drewole/employee-directory-react/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/drewole/react-portfolio.svg?style=for-the-badge
+[contributors-url]: https://github.com/drewole/react-portfolio/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/drewole/react-portfolio.svg?style=for-the-badge
+[forks-url]: https://github.com/drewole/react-portfolio/network/members
+[stars-shield]: https://img.shields.io/github/stars/drewole/react-portfolio.svg?style=for-the-badge
+[stars-url]: https://github.com/drewole/react-portfolio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/drewole/react-portfolio.svg?style=for-the-badge
+[issues-url]: https://github.com/drewole/react-portfolio/issues
+[license-shield]: https://img.shields.io/github/license/drewole/react-portfolio.svg?style=for-the-badge
+[license-url]: https://github.com/drewole/react-portfolio/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/drewole
 [product-screenshot]: /screenshot.png
 [product-logo]: /musicLabLogo.png
-[repo-name]: /musicLabLogo.png
+[repo-name]: react-portfolio

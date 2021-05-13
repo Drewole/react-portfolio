@@ -6,7 +6,7 @@
     "description": "From design to build. I completed this project for a local concrete company that wanted a more impressive online presence. Site is responsive and was built with Wordpress from a custom theme.",
     "technologies":["Responsive","CSS3", "HTML5", "Wordpress Custom Theme"],
     "image": {
-        "square": "./images/staincrete-square.jpg"
+        "square": "staincrete-square.jpg"
     },
     "hasSite": "true",
     "extSite": ""

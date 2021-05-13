@@ -383,12 +383,20 @@ module.exports = function (webpackEnv) {
             // A missing `test` is equivalent to a match.
             {
               test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-              loader: require.resolve('url-loader'),
-              options: {
-                limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
-              },
-            },
+              use: [
+                // adding image-trace-loader
+                {
+                  loader: "image-trace-loader",
+                },
+                {
+                  loader: "url-loader",
+                  options: {
+                    limit: imageInlineSizeLimit,
+                    name: "static/media/[name].[hash:8].[ext]",
+                  },
+                },
+              ],
+            }
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {

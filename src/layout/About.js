@@ -1,11 +1,32 @@
-import React from 'react';
+import ImageLoader from '../components/ImgLoader';
 
 export const About = () => {
+	const skills = [
+		'HTML5',
+		'CSS',
+		'Responsive Design',
+		'PHP',
+		'Javascript',
+		'React',
+		'Express',
+		'MySQL',
+		'MongoDB',
+		'jQuery',
+		'Wordpress',
+		'Docker',
+		'Git',
+		'Webpack',
+		'Sketch',
+		'Figma',
+		'Adobe Suite',
+		'Agile Philosophy'
+	];
 	return (
 		<section id="about" class="row about">
 			<div class="container">
 				<aside>
-					<img src="./src/images/drewPic.jpg" alt="Illustration of Drew Olsen" />
+					<ImageLoader source={'./public/images/drewPic'} alt={'Illustration fo Drew Olsen'} />
+
 					<h3>Hi.👋 I'm Drew.🤓</h3>
 					<p>
 						Have a project? I'm <span>Available!</span>
@@ -25,24 +46,9 @@ export const About = () => {
 					</p>
 					<h3>My Skills Include But Are Not Limited To:</h3>
 					<ul>
-						<li>HTML5</li>
-						<li>CSS</li>
-						<li>Responsive Design</li>
-						<li>PHP</li>
-						<li>Javascript</li>
-						<li>React</li>
-						<li>Express</li>
-						<li>MySQL</li>
-						<li>MongoDB</li>
-						<li>jQuery</li>
-						<li>Wordpress</li>
-						<li>Docker</li>
-						<li>Git</li>
-						<li>Webpack</li>
-						<li>Sketch</li>
-						<li>Figma</li>
-						<li>Adobe Suite</li>
-						<li>Agile Philosophy</li>
+						{skills.map((skill) => {
+							return <li>{skill[i]}</li>;
+						})}
 					</ul>
 				</div>
 			</div>

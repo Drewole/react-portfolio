@@ -192,7 +192,7 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-No License
+
 
 
 
@@ -208,7 +208,8 @@ Project Link: [https://github.com/drewole/react-portfolio](https://github.com/dr
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [MIT](https://opensource.org/licenses/MIT)
+* [Font Awesome](https://fontawesome.com)
+<!-- * [MIT](https://opensource.org/licenses/MIT) -->
 <!-- * [Font Awesome](https://fontawesome.com)
 * [Bootstrap](https://getbootstrap.com) -->
 

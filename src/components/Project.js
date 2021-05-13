@@ -1,35 +1,15 @@
-import React, { useState } from "react";
+import React from 'react';
+import ImageLoader from '../components/ImgLoader';
+import ProjectDetails from './Details';
 
-// Props: source, alt
-const ImageLoader = ({ source, alt }) => {
-  // state of images
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  // src image and trace image url
-  const { src, trace } = require(`./${source}`);
-
-  // render code
-  return (
-    <div>
-      <img
-        src={src}
-        alt={alt}
-        loading="lazy"
-        style={{
-          opacity: imageLoaded ? "1" : "0",
-        }}
-        onLoad={() => setImageLoaded(true)}
-      />
-
-      <img
-        style={{
-          opacity: imageLoaded ? "0" : "1",
-        }}
-        src={trace}
-        alt={alt}
-      />
-    </div>
-  );
+const Project = () => {
+	return (
+		<div class="card">
+			<a href="https://drewole.github.io/adopt-pet-app/">
+				<ImageLoader source="friend-finder.png" alt="Screenshot of find your friend, Friend Finder App" />
+			</a>
+		</div>
+	);
 };
 
-export default ImageLoader;
+export default Project;

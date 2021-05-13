@@ -4,6 +4,7 @@ export const About = () => {
 	const skills = [
 		'HTML5',
 		'CSS',
+		'SCSS',
 		'Responsive Design',
 		'PHP',
 		'Javascript',
@@ -47,7 +48,7 @@ export const About = () => {
 					<h3>My Skills Include But Are Not Limited To:</h3>
 					<ul>
 						{skills.map((skill) => {
-							return <li>{skill[i]}</li>;
+							return <li>{skill}</li>;
 						})}
 					</ul>
 				</div>

@@ -4,7 +4,7 @@ import ProgressiveImage from 'react-progressive-image';
 const Project = () => {
 	const publicUrl = process.env.PUBLIC_URL;
 	return (
-		<div class="card">
+		<div className="card">
 			<a href="https://drewole.github.io/adopt-pet-app/">
 				<ProgressiveImage
 					src={publicUrl + 'images/friend-finder.png'}

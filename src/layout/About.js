@@ -25,8 +25,8 @@ const About = () => {
 		'Agile Philosophy'
 	];
 	return (
-		<section id="about" class="row about">
-			<div class="container">
+		<section id="about" className="row about">
+			<div className="container">
 				<aside>
 					<ProgressiveImage
 						src={publicUrl + 'images/drewPic.jpg'}
@@ -55,7 +55,7 @@ const About = () => {
 					<h3>My Skills Include But Are Not Limited To:</h3>
 					<ul>
 						{skills.map((skill) => {
-							return <li>{skill}</li>;
+							return <li key={skill}>{skill}</li>;
 						})}
 					</ul>
 				</div>

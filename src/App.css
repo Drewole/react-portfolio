@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
+/* lets get our variables out of the way */
+/* 
+	Primary Color: purple;
+	Secondary Color: orangish red
+*/
+:root {
+	--primary-color: #2f2b41;
+	--primary-color-dark: rgb(36, 32, 52);
+	--secondary-color: #44a69d;
+	--secondary-color-dark: #136159;
+	--tertiary-color: #e6484e;
+	--tertiary-color-light: #ed5a5f;
+	--white: #fff;
+	--button-border: 2px solid #c53f43;
+	--text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+	--available: #00ff63;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	/* We have Light, Regular, Bold, and extra bold */
+	font-family: "Poppins", sans-serif;
+}
+p {
+	line-height: 1.7em;
+	margin-bottom: 20px;
+	color: var(--primary-color);
+}
+h1 {
+	font-size: 2.8rem;
+	margin-bottom: 1rem;
+	color: var(--white);
+	font-weight: bolder;
+	text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+h2 {
+	font-size: 1.9rem;
+	margin-bottom: 1.7rem;
+}
+h3 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+}
+h4 {
+	font-size: 1.2rem;
+	margin-bottom: 1.3rem;
+}
+.container {
+	width: 90%;
+	padding: 0 5%;
+}
+.row {
+	padding: 40px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Building out the header  */
+header {
+	display: flex;
+	flex-flow: row nowrap;
+
+	opacity: 0.9;
+	justify-content: space-between;
+	background-color: var(--primary-color);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	/* grabbed this from this generator. This just offers a simple solution to acheive soft shadows https://brumm.af/shadows */
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+		0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		0 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Building the logo */
+a.logo {
+	padding: 10px;
+	text-decoration: none;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	color: var(--white);
+	text-shadow: ;
+	font-size: 0.7rem;
+}
+.logo img {
+	padding-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation specific part of the header  */
+nav {
+	display: flex;
+	align-items: center;
+}
+nav ul {
+	display: flex;
+	flex-shrink: 0;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+nav a {
+	padding: 15px 10px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--secondary-color);
+	font-size: 0.6rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transition: color 0.3s ease-in-out;
+}
+nav a:hover {
+	color: var(--tertiary-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero {
+	display: flex;
+	height: 120vw;
+	padding: 5vw 4%;
+	align-items: center;
+	background-color: var(--primary-color);
+	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+		url(./images/forest-close.jpg);
+	background-position: center center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: all 0.2s ease-in-out;
 }
+
+@media only screen and (min-width: 500px) {
+	.hero {
+		height: 60vh;
+	}
+} /*  end of media query*/
+
+.intro-container p {
+	color: var(--white);
+	padding: 20px 0;
+	text-shadow: var(--text-shadow);
+	font-size: 1rem;
+}
+.hero button {
+	font-size: 0.7rem;
+	background-color: var(--tertiary-color);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 15px 20px;
+	transition: all 0.2s ease-in-out;
+	border: var(--button-border);
+}
+.hero button:hover {
+	color: var(--primary-color);
+	padding: 15px 35px;
+	text-shadow: var(--text-shadow);
+	background-color: var(--tertiary-color-light);
+	box-shadow: 0 0 10px var(--tertiary-color-light);
+	cursor: pointer;
+} /* End of the hero section  */
+
+/* About Me Stuff */
+section.about {
+	background-color: var(--primary-color);
+	padding: 40px 0 80px;
+}
+.about h2 {
+	color: var(--tertiary-color-light);
+	font-size: 1.6em;
+}
+.about p {
+	color: var(--white);
+	font-size: 1.2em;
+	line-height: 1.9em;
+	font-weight: 300;
+}
+.about h3 {
+	color: var(--tertiary-color-light);
+	font-size: 1.2em;
+	line-height: 1.2em;
+	font-weight: 600;
+	margin-top: 65px;
+}
+.about ul {
+	color: var(--secondary-color);
+	margin: 0;
+}
+.about li {
+	display: inline-block;
+	padding: 5px 10px;
+} /* End of about */
+
+/* Aside Things */
+aside {
+	padding: 25px;
+	text-align: center;
+}
+.about aside p {
+	font-size: 0.8em;
+}
+.about aside p span {
+	color: var(--available);
+	font-weight: 600;
+}
+.about aside h3 {
+	font-size: 1.3em;
+	margin: 15px 0 0;
+}
+aside img {
+	border-radius: 50%;
+	border: 8px solid var(--primary-color-dark);
+} /* End of aside */
+
+/* Portfolio section stuff */
+.portfolio {
+	background-color: var(--secondary-color);
+	width: 90%;
+	padding: 65px 5%;
+}
+.portfolio h2 {
+	color: var(--secondary-color-dark);
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.folio-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.folio-items + .card {
+	flex-basis: 1.5;
+}
+.card {
+	position: relative;
+	flex-basis: auto;
+	margin: 45px 4%;
+	max-width: 410px;
+}
+.card img {
+	width: 100%;
+	border-radius: 6px;
+	filter: saturate(1);
+	opacity: 1;
+	transition: opacity filter 0.3s ease-in-out;
+	transition: box-shadow 0.3s ease-in-out;
+	/* grabbed this from this generator. This just offers a simple solution to acheive soft shadows https://brumm.af/shadows */
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02), 0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+		0 12.5px 10px rgba(0, 0, 0, 0.035), 0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.card img:hover {
+	filter: (0.4);
+	opacity: 0.8;
+	box-shadow: 0 0.9px 2.2px rgba(0, 0, 0, 0.02), 0 2.2px 5.3px rgba(0, 0, 0, 0.028), 0 4.1px 10px rgba(0, 0, 0, 0.035),
+		0 7.4px 17.9px rgba(0, 0, 0, 0.042), 0 13.8px 33.4px rgba(0, 0, 0, 0.05), 0 33px 80px rgba(0, 0, 0, 0.07);
+}
+
+section.contact {
+	background-color: var(--primary-color);
+}
+.contact h2 {
+	font-size: 1.4em;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.6em;
+	padding: 25px 16%;
+	color: var(--white);
+}
+.contact form {
+	padding: 0 12% 40px;
+}
+form div {
+	position: relative;
+}
+form label {
+	position: absolute;
+	top: ;
+	font-size: 0.8em;
+	color: var(--white);
+}
+form textarea {
+	border: none;
+	line-height: 2em;
+	padding: 10px;
+	margin: 20px 0;
+	width: 100%;
+	border-radius: 4px;
+	background-color: #4f4a72;
+}
+form input[type="text"],
+form input[type="email"] {
+	border: none;
+	line-height: 2em;
+	padding: 10px;
+	margin: 20px 0;
+	width: 100%;
+	border-radius: 4px;
+	background-color: #4f4a72;
+}
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+	background-color: var(--white);
+}
+
+form button {
+	font-size: 0.7rem;
+	background-color: var(--secondary-color);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: inline-block;
+	border-radius: 4px;
+	padding: 15px 20px;
+	transition: all 0.2s ease-in-out;
+	border: none;
+}
+form button:hover {
+	color: var(--primary-color);
+	padding: 15px 35px;
+	text-shadow: var(--text-shadow);
+	background-color: var(--tertiary-color);
+	cursor: pointer;
+}
+/* Footer Styles */
+footer {
+	background-color: var(--tertiary-color);
+	padding: 20px 10px;
+	text-align: right;
+}
+footer p {
+	margin: 0;
+	font-size: 0.7rem;
+	color: var(--white);
+	text-shadow: var(--text-shadow);
+}
+
+/* 768px,1024px,1280px */
+/* The start of the breakpoints */
+@media only screen and (min-width: 768px) {
+	section.about {
+		padding: 40px 7% 80px;
+	}
+	nav a {
+		font-size: 0.8rem;
+	}
+	.card {
+		max-width: 37vw;
+	}
+} /* end of media query */
+
+@media only screen and (min-width: 1024px) {
+	section.about {
+		padding: 40px 18% 80px;
+	}
+	.hero h1 {
+		font-size: 3.8em;
+	}
+	.contact form {
+		padding: 0 25% 40px;
+	}
+} /* end of media query */
+
+@media only screen and (min-width: 1280px) {
+	section.about {
+		padding: 40px 22% 80px;
+	}
+	.hero h1 {
+		font-size: 5em;
+	}
+} /* end of media query */

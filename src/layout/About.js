@@ -1,4 +1,4 @@
-import ImageLoader from '../components/ImgLoader';
+import ProgressiveImage from 'react-progressive-image';
 
 const About = () => {
 	const publicUrl = process.env.PUBLIC_URL;
@@ -28,7 +28,12 @@ const About = () => {
 		<section id="about" class="row about">
 			<div class="container">
 				<aside>
-					<ImageLoader source={publicUrl + 'public/images/drewPic'} alt={'Illustration fo Drew Olsen'} />
+					<ProgressiveImage
+						src={publicUrl + 'images/drewPic.jpg'}
+						placeholder={publicUrl + 'images/friend-finder.png'}
+					>
+						{(src) => <img src={src} alt={'Illustration fo Drew Olsen'} />}
+					</ProgressiveImage>
 
 					<h3>Hi.👋 I'm Drew.🤓</h3>
 					<p>

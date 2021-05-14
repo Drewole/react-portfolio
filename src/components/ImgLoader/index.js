@@ -6,6 +6,7 @@ import './ImgLoader.css';
 
 // Props: source, alt
 const ImageLoader = ({ source, alt }) => {
+	const publicUrl = process.env.PUBLIC_URL;
 	// state of images
 	const [
 		imageLoaded,
@@ -13,7 +14,7 @@ const ImageLoader = ({ source, alt }) => {
 	] = useState(false);
 
 	// src image and trace image url
-	const { src, trace } = require(`./${source}`);
+	const { src, trace } = require(publicUrl + `${source}`);
 
 	// render code
 	return (

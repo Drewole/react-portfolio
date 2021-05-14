@@ -1,6 +1,8 @@
 import ImageLoader from '../components/ImgLoader';
 
 const About = () => {
+	const publicUrl = process.env.PUBLIC_URL;
+
 	const skills = [
 		'HTML5',
 		'CSS',
@@ -26,7 +28,7 @@ const About = () => {
 		<section id="about" class="row about">
 			<div class="container">
 				<aside>
-					<ImageLoader source={'./public/images/drewPic'} alt={'Illustration fo Drew Olsen'} />
+					<ImageLoader source={publicUrl + 'public/images/drewPic'} alt={'Illustration fo Drew Olsen'} />
 
 					<h3>Hi.👋 I'm Drew.🤓</h3>
 					<p>

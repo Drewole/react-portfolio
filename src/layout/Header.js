@@ -1,6 +1,8 @@
 import Logo from '../components/Logo';
 
 const Header = () => {
+	const publicUrl = process.env.PUBLIC_URL;
+	console.log(publicUrl);
 	return (
 		<header id="top">
 			<Logo />

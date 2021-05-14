@@ -1,6 +1,6 @@
 import Logo from '../components/Logo';
 
-export const Header = () => {
+const Header = () => {
 	return (
 		<header id="top">
 			<Logo />
@@ -20,3 +20,4 @@ export const Header = () => {
 		</header>
 	);
 };
+export default Header;

@@ -1,5 +1,6 @@
 import React from 'react';
 
-export const Intro = () => {
+const Intro = () => {
 	return <div />;
 };
+export default Intro;

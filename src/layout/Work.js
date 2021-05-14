@@ -1,6 +1,6 @@
 import React from 'react';
 import { Project, Details } from '../components/';
-export const Work = () => {
+const Work = () => {
 	return (
 		<section id="portfolio" class="row portfolio">
 			<h2>Some of My Work.</h2>
@@ -16,3 +16,4 @@ export const Work = () => {
 		</section>
 	);
 };
+export default Work;

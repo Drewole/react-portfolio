@@ -1,5 +1,5 @@
 import './App.css';
-import { Header, Footer, Hero, About, Work } from './layout';
+import { Header, Footer, Hero, About, Work } from './layout/index';
 
 function App() {
 	return (

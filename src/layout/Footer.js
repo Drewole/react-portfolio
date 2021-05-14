@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Footer = () => {
+const Footer = () => {
 	return (
 		<footer>
 			<p class="cheatcode">↑ ↑ ↓ ↓ ← → ← → A B B A</p>
@@ -8,3 +8,5 @@ export const Footer = () => {
 		</footer>
 	);
 };
+
+export default Footer;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Hero = () => {
+const Hero = () => {
 	return (
 		<div class="hero row">
 			<div class="intro-container">
@@ -15,3 +15,5 @@ export const Hero = () => {
 		</div>
 	);
 };
+
+export default Hero;

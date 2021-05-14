@@ -1,6 +1,6 @@
 import ImageLoader from '../components/ImgLoader';
 
-export const About = () => {
+const About = () => {
 	const skills = [
 		'HTML5',
 		'CSS',
@@ -56,3 +56,5 @@ export const About = () => {
 		</section>
 	);
 };
+
+export default About;

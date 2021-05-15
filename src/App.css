@@ -117,8 +117,7 @@ nav a:hover {
 	padding: 5vw 4%;
 	align-items: center;
 	background-color: var(--primary-color);
-	background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
-		url(./images/forest-close.jpg);
+	background-image: url("./images/forest-close.jpg");
 	background-position: center center fixed;
 	background-repeat: no-repeat;
 	background-size: cover;

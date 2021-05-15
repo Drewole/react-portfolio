@@ -4,7 +4,7 @@ const Hero = () => {
 	return (
 		<div className="hero row">
 			<div className="intro-container">
-				<h1>A Designer That Can Code</h1>
+				<h1>Full-Stack Developer</h1>
 				<p>
 					I am a designer that is also a full-stack developer. I can take your project from design to deploy.
 				</p>

@@ -117,11 +117,11 @@ nav a:hover {
 	padding: 5vw 4%;
 	align-items: center;
 	background-color: var(--primary-color);
-	background-image: url("./images/forest-close.jpg");
 	background-position: center center fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
 	transition: all 0.2s ease-in-out;
+	border-bottom: 15px solid #252034;
 }
 
 @media only screen and (min-width: 500px) {

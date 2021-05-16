@@ -1,30 +1,21 @@
-import { useEffect } from 'react';
-// import Project from '../components/Project';
-import data from '../data/data';
+import { useEffect, useState } from 'react';
+import Project from '../components/Project';
 // import Details from '../components/Details';
-
+import data from './../data/data.json';
 const Work = () => {
-	useEffect(() => {
-		const newData = JSON.stringify(data);
-		console.log(newData);
-		return () => {
-			//cleanup
-		};
-	}, []);
-
 	return (
 		<section id="portfolio" className="row portfolio">
 			<h2>Some of My Work.</h2>
 			<div className="folio-items">
 				<div className="details">{/* <Details /> */}</div>
-				{/* {data.map((project, i) => {
-					return <p key={project}>{project}</p>;
+				{/* {projectDetails.map((project, i) => {
+					return <p key={i}>{project}</p>;
 				})} */}
-				{/* {Object.keys(data).map((keyName, i) => (
-					<p key={i}>
-						key: {i} Name: {data[keyName]}
-					</p>
-				))} */}
+				{data.map((item, i) => {
+					console.log(item);
+					return <Project key={i} data={item} />;
+				})}
+
 				{/* <Project /> */}
 			</div>
 		</section>

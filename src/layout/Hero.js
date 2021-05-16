@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
 	return (
-		<div className="hero row">
+		<div style={{ backgroundImage: 'url(/images/forestClose.jpg)' }} className="hero row">
 			<div className="intro-container">
 				<h1>Full-Stack Developer</h1>
 				<p>

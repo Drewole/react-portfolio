@@ -8,15 +8,11 @@ const Work = () => {
 			<h2>Some of My Work.</h2>
 			<div className="folio-items">
 				<div className="details">{/* <Details /> */}</div>
-				{/* {projectDetails.map((project, i) => {
-					return <p key={i}>{project}</p>;
-				})} */}
+
 				{data.map((item, i) => {
 					console.log(item);
 					return <Project key={i} data={item} />;
 				})}
-
-				{/* <Project /> */}
 			</div>
 		</section>
 	);

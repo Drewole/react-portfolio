@@ -94,6 +94,24 @@ const Data = [
 			square : 'nightingale-square.jpg'
 		},
 		extSite      : 'https://nightingalempls.com'
+	},
+	{
+		id           : 6,
+		name         : 'Javascript Weather Dash',
+		year         : '2021',
+		slug         : 'js-weather-dash',
+		type         : 'Web-based weather application',
+		description  :
+			'Weather dashboard I built in javascript that retrieves the forecast based on a search. Searches are saved for future use.',
+		technologies : [
+			'Local Storage',
+			'HTML5',
+			'Javascript'
+		],
+		image        : {
+			square : 'jsWeatherDash.jpg'
+		},
+		extSite      : 'https://drewole.github.io/js-weather-dash/'
 	}
 ];
 

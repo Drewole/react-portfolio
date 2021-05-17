@@ -1,8 +1,9 @@
 import React from 'react';
 
 const Hero = () => {
+	const publicUrl = process.env.PUBLIC_URL;
 	return (
-		<div style={{ backgroundImage: 'url(/images/forestClose.jpg)' }} className="hero row">
+		<div style={{ backgroundImage: `url(${publicUrl}/images/forestClose.jpg)` }} className="hero row">
 			<div className="intro-container">
 				<h1>Full-Stack Developer</h1>
 				<p>

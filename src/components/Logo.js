@@ -1,9 +1,10 @@
 import React from 'react';
+import Svg from './../images/logo.svg';
 
 const Logo = () => {
 	return (
 		<a href="#top" className="logo">
-			<img src="/images/logo.svg" alt="Drew Olsen Logo" />
+			<img src={Svg} alt="Drew Olsen Logo" />
 			Drew Olsen
 		</a>
 	);

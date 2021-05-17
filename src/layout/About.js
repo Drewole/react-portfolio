@@ -1,8 +1,9 @@
 import ProgressiveImage from 'react-progressive-image';
+import DrewPic from '../images/drewPic.jpg';
 
 const About = () => {
 	const publicUrl = process.env.PUBLIC_URL;
-
+	console.log(DrewPic);
 	const skills = [
 		'HTML5',
 		'CSS',
@@ -28,10 +29,7 @@ const About = () => {
 		<section id="about" className="row about">
 			<div className="container">
 				<aside>
-					<ProgressiveImage
-						src={publicUrl + 'images/drewPic.jpg'}
-						placeholder={publicUrl + 'images/friend-finder.png'}
-					>
+					<ProgressiveImage src={DrewPic.src} placeholder={DrewPic.src}>
 						{(src) => <img src={src} alt={'Illustration fo Drew Olsen'} />}
 					</ProgressiveImage>
 

@@ -89,5 +89,24 @@
             "square": "nightingale-square.jpg"
         },
         "extSite": "https://nightingalempls.com"
+    },
+    {
+        "id": 6,
+        "name": "JS Weather Dashboard",
+        "year": "2021",
+        "slug": "js-weather-dash",
+        "type": "Design and Development",
+        "description": "Simple Javascript weather application that keeps track of past searches with the help of local storage.",
+        "technologies": [
+            "Javascript",
+            "Local Storage",
+            "CSS3",
+            "HTML5",
+            "REST API"
+        ],
+        "image": {
+            "square": "weatherDash-square.png"
+        },
+        "extSite": "https://drewole.github.io/js-weather-dash/"
     }
 ]

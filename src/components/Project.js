@@ -6,7 +6,7 @@ const Project = (props) => {
 	console.log(props, 'Props');
 	return (
 		<div className="card">
-			<a href="https://drewole.github.io/adopt-pet-app/">
+			<a href={props.data.extSite}>
 				<ProgressiveImage
 					src={publicUrl + '/images/examples/' + props.data.image.square}
 					placeholder={publicUrl + '/images/examples/' + props.data.image.square}
